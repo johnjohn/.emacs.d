@@ -47,6 +47,9 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "DejaVu Sans Mono" :foundry "unknown" :slant normal :weight normal :height 83 :width normal)))))
 
+;;; GGTags
+(ggtags-mode 1)
+
 ;;; Semantic
 (semantic-mode 1)
 (global-semanticdb-minor-mode t)
@@ -67,6 +70,8 @@
 (global-set-key (kbd "M-m") 'menu-bar-mode)
 (global-set-key (kbd "C-c M-f") 'projectile-find-file-dwim-other-window)
 (global-set-key (kbd "s-d") 'dired)
+(global-set-key (kbd "s-g u") 'ggtags-update-tags)
+(global-set-key (kbd "s-g j") 'ggtags-find-tag-dwim)
 
 (provide 'init)
 ;;; init.el ends here
