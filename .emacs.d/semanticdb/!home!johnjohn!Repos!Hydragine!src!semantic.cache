@@ -1,0 +1,89 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "Hydragine.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [26 45])
+            ("stdio.h" include (:system-flag t) nil [46 64])
+            ("GL/glew.h" include nil nil [66 86])
+            ("GLFW/glfw3.h" include nil nil [87 110])
+            ("Hydragine.hpp" include nil nil [112 136])
+            ("HG_render.hpp" include nil nil [137 161])
+            ("HG_types.hpp" include nil nil [162 185])
+            ("HG_time.hpp" include nil nil [186 208])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [219 228])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [229 241]))                  
+                :type "int")
+                nil [210 910])
+            ("errorCallback" function
+               (:arguments 
+                  ( ("error" variable (:type "int") (reparse-symbol arg-sub-list) [931 941])
+                    ("description" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [942 966]))                  
+                :type "void")
+                nil [912 1000])
+            ("keyCallback" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1019 1038])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [1039 1047])
+                    ("scancode" variable (:type "int") (reparse-symbol arg-sub-list) [1048 1061])
+                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [1062 1073])
+                    ("mods" variable (:type "int") (reparse-symbol arg-sub-list) [1074 1083]))                  
+                :type "void")
+                nil [1002 1188])
+            ("buildWindow" function
+               (:pointer 1
+                :arguments 
+                  ( ("x" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1214 1222])
+                    ("y" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1223 1231])
+                    ("windowTitle" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1232 1250]))                  
+                :type ("GLFWwindow" type (:type "class") nil nil))
+                nil [1190 1607])
+            ("readInput" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1624 1644]))                  
+                :type "void")
+                nil [1609 1668])
+            ("tick" function (:type "void") nil [1670 1686])
+            ("render" function
+               (:arguments 
+                  ( ("delta" variable (:type ("float64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1700 1714]))                  
+                :type "void")
+                nil [1688 1721])
+            ("swapBuffers" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1740 1760]))                  
+                :type "void")
+                nil [1723 1791]))          
+      :file "Hydragine.cpp"
+      :pointmax 1792
+      :fsize 1809
+      :lastmodtime '(22366 72 251767 372000)
+      :unmatched-syntax nil)
+)
+  :file "!home!johnjohn!Repos!Hydragine!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
