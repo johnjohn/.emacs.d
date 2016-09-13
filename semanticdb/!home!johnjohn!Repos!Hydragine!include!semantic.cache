@@ -1,0 +1,488 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+    (semanticdb-table "HG_Render.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("VAO_IDs" type
+               (:members 
+                  ( ("tris" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [85 90])
+                    ("numVAOs" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [91 100]))                  
+                :type "enum")
+                nil [70 101])
+            ("VBO_IDs" type
+               (:members 
+                  ( ("VBO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [117 121])
+                    ("numVBOs" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [122 131]))                  
+                :type "enum")
+                nil [102 132])
+            ("Attrib_IDs" type
+               (:members 
+                  ( ("vPos" variable
+                       (:constant-flag t
+                        :default-value (158 159)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [151 159]))                  
+                :type "enum")
+                nil [133 162]))          
+      :file "HG_Render.hpp"
+      :pointmax 162
+      :fsize 14
+      :lastmodtime '(22314 56038 619188 933000)
+      :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+    (semanticdb-table "HG_render.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__HG_RENDER_H__" variable (:constant-flag t) nil [55 70])
+            ("glm/glm.hpp" include (:system-flag t) nil [72 94])
+            ("VAO_IDs" type
+               (:members 
+                  ( ("worldVertAts" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [194 207])
+                    ("worldIndexAts" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [208 222])
+                    ("numVAOs" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [223 232]))                  
+                :type "enum")
+                nil [179 233])
+            ("VBO_IDs" type
+               (:members 
+                  ( ("worldVerts" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [251 262])
+                    ("worldIndex" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [263 274])
+                    ("numVBOs" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [275 284]))                  
+                :type "enum")
+                nil [236 285])
+            ("Attrib_IDs" type
+               (:members 
+                  ( ("vPos" variable
+                       (:constant-flag t
+                        :default-value (313 314)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [306 314]))                  
+                :type "enum")
+                nil [288 317]))          
+      :file "HG_render.h"
+      :pointmax 331
+      :fsize 331
+      :lastmodtime '(22366 96 511766 611000)
+      :unmatched-syntax '((close-paren 322 . 323) (symbol 106 . 115) (NAMESPACE 96 . 105) (close-paren 322 . 323) (symbol 106 . 115) (NAMESPACE 96 . 105))
+      :lexical-table 
+        '(("__HG_RENDER_H__")
+          )
+)
+    (semanticdb-table "Hydragine.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GLFW/glfw3.h" include nil nil [1 24])
+            ("HG_types.h" include nil nil [25 46])
+            ("MS_PER_TICK" variable (:constant-flag t) nil [56 67])
+            ("errorCallback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("error" variable (:type "int") (reparse-symbol arg-sub-list) [93 103])
+                    ("description" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [104 128]))                  
+                :type "void")
+                nil [74 129])
+            ("keyCallback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147 166])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [167 175])
+                    ("scancode" variable (:type "int") (reparse-symbol arg-sub-list) [176 189])
+                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [190 201])
+                    ("mods" variable (:type "int") (reparse-symbol arg-sub-list) [202 211]))                  
+                :type "void")
+                nil [130 212])
+            ("buildWindow" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("x" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [238 246])
+                    ("y" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [247 255])
+                    ("windowTitle" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [256 274]))                  
+                :type ("GLFWwindow" type (:type "class") nil nil))
+                nil [214 275])
+            ("readInput" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [292 311]))                  
+                :type "void")
+                nil [277 312])
+            ("tick" function
+               (:prototype-flag t
+                :type "void")
+                nil [313 325])
+            ("render" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("delta" variable (:type ("float64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [338 352]))                  
+                :type "void")
+                nil [326 353])
+            ("swapBuffers" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [371 390]))                  
+                :type "void")
+                nil [354 391]))          
+      :file "Hydragine.hpp"
+      :pointmax 392
+      :fsize 391
+      :lastmodtime '(22366 19721 214451 716000)
+      :unmatched-syntax nil)
+    (semanticdb-table "HG_types.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("uint8" type
+               (:typedef ("unsigned char")
+                :type "typedef")
+                nil [78 106])
+            ("uint16" type
+               (:typedef ("unsigned short")
+                :type "typedef")
+                nil [107 137])
+            ("uint32" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [138 166])
+            ("uint64" type
+               (:typedef ("unsigned long long")
+                :type "typedef")
+                nil [167 201])
+            ("int8" type
+               (:typedef ("char")
+                :type "typedef")
+                nil [223 241])
+            ("int16" type
+               (:typedef ("short")
+                :type "typedef")
+                nil [242 262])
+            ("int32" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [263 281])
+            ("int64" type
+               (:typedef ("long long")
+                :type "typedef")
+                nil [282 306])
+            ("float32" type
+               (:typedef ("float")
+                :type "typedef")
+                nil [318 340])
+            ("float64" type
+               (:typedef ("double")
+                :type "typedef")
+                nil [341 364]))          
+      :file "HG_types.h"
+      :pointmax 364
+      :fsize 363
+      :lastmodtime '(22308 25002 880035 620000)
+      :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+    (semanticdb-table "HG_render.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("__HG_RENDER_H__" variable (:constant-flag t) nil [55 70])
+            ("glm/glm.hpp" include (:system-flag t) nil [72 94])
+            ("VAO_IDs" type
+               (:members 
+                  ( ("worldVertAts" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [195 208])
+                    ("worldIndexAts" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [209 223])
+                    ("numVAOs" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [224 233]))                  
+                :type "enum")
+                nil [180 234])
+            ("VBO_IDs" type
+               (:members 
+                  ( ("worldVerts" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [252 263])
+                    ("worldIndex" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [264 275])
+                    ("numVBOs" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [276 285]))                  
+                :type "enum")
+                nil [237 286])
+            ("Attrib_IDs" type
+               (:members 
+                  ( ("vPos" variable
+                       (:constant-flag t
+                        :default-value (313 314)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [307 315]))                  
+                :type "enum")
+                nil [289 318])
+            ("Hydragine" type
+               (:members 
+                  ( ("VAO_IDs" type
+                       (:members 
+                          ( ("worldVertAts" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [195 208])
+                            ("worldIndexAts" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [209 223])
+                            ("numVAOs" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [224 233]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [180 234])
+                    ("VBO_IDs" type
+                       (:members 
+                          ( ("worldVerts" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [252 263])
+                            ("worldIndex" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [264 275])
+                            ("numVBOs" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [276 285]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [237 286])
+                    ("Attrib_IDs" type
+                       (:members 
+                          ( ("vPos" variable
+                               (:constant-flag t
+                                :default-value (314 315)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [307 315]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [289 318]))                  
+                :type "namespace")
+                nil [96 324]))          
+      :file "HG_render.hpp"
+      :pointmax 332
+      :fsize 331
+      :lastmodtime '(22366 204 399763 227000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__HG_RENDER_H__")
+          )
+)
+    (semanticdb-table "HG_options.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("algorithm" include (:system-flag t) nil [1 21])
+            ("string" include (:system-flag t) nil [22 39])
+            ("readOption" function
+               (:pointer 1
+                :arguments 
+                  ( ("begin" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [58 72])
+                    ("end" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [73 85])
+                    ("option" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [86 112]))                  
+                :type "char")
+                nil [41 226])
+            ("readFlag" function
+               (:arguments 
+                  ( ("begin" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [242 255])
+                    ("end" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [256 267])
+                    ("option" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [268 294]))                  
+                :type "bool")
+                nil [228 344]))          
+      :file "HG_options.h"
+      :pointmax 345
+      :fsize 344
+      :lastmodtime '(22366 22649 810387 627000)
+      :unmatched-syntax nil)
+    (semanticdb-table "HG_options.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("algorithm" include (:system-flag t) nil [1 21])
+            ("string" include (:system-flag t) nil [22 39])
+            ("readOption" function
+               (:pointer 1
+                :arguments 
+                  ( ("begin" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [58 72])
+                    ("end" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [73 85])
+                    ("option" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [86 112]))                  
+                :type "char")
+                nil [41 226])
+            ("readFlag" function
+               (:arguments 
+                  ( ("begin" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [242 255])
+                    ("end" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [256 267])
+                    ("option" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [268 294]))                  
+                :type "bool")
+                nil [228 344]))          
+      :file "HG_options.hpp"
+      :pointmax 345
+      :fsize 344
+      :lastmodtime '(22366 22658 858387 429000)
+      :unmatched-syntax nil)
+    (semanticdb-table "HG_types.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("uint8" type
+               (:typedef ("unsigned char")
+                :type "typedef")
+                nil [64 92])
+            ("uint16" type
+               (:typedef ("unsigned short")
+                :type "typedef")
+                nil [93 123])
+            ("uint32" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [124 152])
+            ("uint64" type
+               (:typedef ("unsigned long long")
+                :type "typedef")
+                nil [153 187])
+            ("int8" type
+               (:typedef ("char")
+                :type "typedef")
+                nil [209 227])
+            ("int16" type
+               (:typedef ("short")
+                :type "typedef")
+                nil [228 248])
+            ("int32" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [249 267])
+            ("int64" type
+               (:typedef ("long long")
+                :type "typedef")
+                nil [268 292])
+            ("float32" type
+               (:typedef ("float")
+                :type "typedef")
+                nil [304 326])
+            ("float64" type
+               (:typedef ("double")
+                :type "typedef")
+                nil [327 350]))          
+      :file "HG_types.hpp"
+      :pointmax 351
+      :fsize 364
+      :lastmodtime '(22366 22683 678386 886000)
+      :unmatched-syntax nil)
+    (semanticdb-table "HG_time.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("chrono" include (:system-flag t) nil [15 32])
+            ("HG_types.h" include nil nil [33 54])
+            ("getTime" function (:type ("float64" type (:type "class") nil nil)) nil [56 100]))          
+      :file "HG_time.h"
+      :pointmax 100
+      :fsize 99
+      :lastmodtime '(22308 25002 880035 620000)
+      :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+    (semanticdb-table "HG_time.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GLFW/glfw3.h" include (:system-flag t) nil [1 24])
+            ("chrono" include (:system-flag t) nil [25 42])
+            ("HG_types.hpp" include nil nil [43 66])
+            ("getTime" function (:type ("float64" type (:type "class") nil nil)) nil [68 112]))          
+      :file "HG_time.hpp"
+      :pointmax 113
+      :fsize 112
+      :lastmodtime '(22366 22828 390383 719000)
+      :unmatched-syntax nil))
+  :file "!home!johnjohn!Repos!Hydragine!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
