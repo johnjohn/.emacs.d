@@ -24,6 +24,7 @@
 ;;; Toggles
 ;;; Disable menu bar by default (M-m re-enables)
 (menu-bar-mode -1)
+(global-set-key (kbd "M-m") 'menu-bar-mode)
 
 ;;; Typeface and colors
 (custom-set-variables
@@ -55,6 +56,7 @@
 (global-semanticdb-minor-mode t)
 (semantic-add-system-include "/usr/include/" 'c++-mode)
 (semantic-add-system-include "../include/" 'c++-mode)
+(global-semantic-idle-summary-mode 1)
 
 ;;; Flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
@@ -67,7 +69,6 @@
 ;;; Keys
 (global-set-key (kbd "<C-c l>") 'semantic-analyze-possible-completions)
 (global-set-key (kbd "<M-down>") 'kill-this-buffer)
-(global-set-key (kbd "M-m") 'menu-bar-mode)
 (global-set-key (kbd "C-c M-f") 'projectile-find-file-dwim-other-window)
 (global-set-key (kbd "s-d") 'dired)
 (global-set-key (kbd "s-g u") 'ggtags-update-tags)

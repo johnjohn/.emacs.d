@@ -1,0 +1,27 @@
+;; Object Hydragine/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Hydragine/"
+  :tables
+  (list
+    (semanticdb-table "main.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [20 43])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [54 63])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [64 76]))                  
+                :type "int")
+                nil [45 159]))          
+      :file "main.c"
+      :pointmax 160
+      :fsize 78
+      :lastmodtime '(22727 50848 97418 642000)
+      :unmatched-syntax nil))
+  :file "!home!johnjohn!Repos!Hydragine!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

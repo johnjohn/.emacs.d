@@ -1,0 +1,25 @@
+;; Object Greenlings/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Greenlings/"
+  :tables
+  (list
+    (semanticdb-table "test.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [12 21])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22 34]))                  
+                :type "int")
+                nil [3 41]))          
+      :file "test.c"
+      :pointmax 42
+      :fsize 0
+      :lastmodtime '(22654 39497 751312 962000)
+      :unmatched-syntax '((symbol 2 . 9) (punctuation 1 . 2) (symbol 2 . 9) (punctuation 1 . 2) (symbol 11 . 13) (punctuation 10 . 11) (symbol 2 . 9) (punctuation 1 . 2) (symbol 11 . 14) (punctuation 10 . 11) (symbol 2 . 9) (punctuation 1 . 2) (symbol 11 . 15) (punctuation 10 . 11) (symbol 2 . 9) (punctuation 1 . 2) (symbol 11 . 14) (punctuation 10 . 11) (symbol 2 . 9) (punctuation 1 . 2) (symbol 11 . 12) (punctuation 10 . 11) (symbol 2 . 9) (punctuation 1 . 2) (punctuation 10 . 11) (symbol 2 . 9) (punctuation 1 . 2) (symbol 2 . 9) (punctuation 1 . 2))))
+  :file "!home!johnjohn!Repos!Greenlings!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
